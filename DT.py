@@ -5,9 +5,8 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 
 # Load dataset
-data = load_iris()
-X = data.data
-y = data.target
+X = [[30],[40],[50],[60],[20],[10],[70]]
+y = [0,1,1,1,0,0,1]
 
 # Split data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
