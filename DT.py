@@ -14,10 +14,14 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 # Model
 model = DecisionTreeClassifier()
 model.fit(X_train, y_train)
-X_test = [[20]]
-# Prediction
+
+# Prediction - DON'T redefine X_test, use the one from train_test_split
 y_pred = model.predict(X_test)
 
 # Accuracy
 acc = accuracy_score(y_test, y_pred)
 print("Model Accuracy:", acc)
+
+# If you want to test a single value separately:
+single_prediction = model.predict([[20]])
+print("Prediction for [20]:", single_prediction)
