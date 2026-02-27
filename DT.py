@@ -23,5 +23,5 @@ acc = accuracy_score(y_test, y_pred)
 print("Model Accuracy:", acc)
 
 # If you want to test a single value separately:
-single_prediction = model.predict([[20]])
+single_prediction = model.predict([[60]])
 print("Prediction for [60]:", single_prediction)
