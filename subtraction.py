@@ -1,5 +1,5 @@
 a = 10
-b = 5
+b = 7
 
 result = a - b
 print("Subtraction:", result)
